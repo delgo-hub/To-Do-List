@@ -54,6 +54,11 @@ addBtn.addEventListener("click", () => {
 
     //DELETE BUTTON EVENT
     deleteBtn.addEventListener("click", () => {
+        if (taskLi.classList.contains("checked")) {
+            taskLi.classList.remove("checked");
+            counter++;
+        }
+
         taskContainerSmaller.removeChild(taskLi);
         counter--;
         taskCounterEl.textContent = `${counter} TASKS`;
