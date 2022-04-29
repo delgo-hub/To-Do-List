@@ -1,0 +1,144 @@
+/* GLOBAL */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-color: #7f8eff;
+}
+body {
+    font-size: 62.5%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdc7a6;
+}
+
+/* TO DO BODY */
+
+.to-do-body {
+    position: relative;
+    height: 80vh;
+    width: 30rem;
+    background-color: white;
+    box-shadow: 0 0 2rem 0.5rem rgba(59, 50, 50, 0.264);
+    padding: 0.4rem 1rem;
+}
+
+/* to do head section */
+.to-do-header {
+    color: var(--font-color);
+    height: 12%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.597);
+}
+/* ----------------------- */
+
+/* to do middle section */
+
+/* input and add section */
+#tasks-container {
+    width: 100%;
+    height: 76%;
+    overflow: scroll;
+    padding: 1rem 0;
+}
+#tasks-container-smaller {
+    width: 100%;
+    height: 100%;
+}
+#tasks-container::-webkit-scrollbar {
+    display: none;
+}
+.task-wrapper {
+    width: 100%;
+}
+.task-wrapper > input {
+    width: 73%;
+    height: 2rem;
+    padding: 0 0.8rem;
+    border: 1px var(--font-color) solid;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 530;
+}
+.task-wrapper > input:focus {
+    outline: none;
+}
+::placeholder {
+    color: var(--font-color);
+}
+.task-wrapper > button {
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    background-color: var(--font-color);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    float: right;
+}
+/* -------------- */
+
+/* list items scetion */
+.task-content {
+    font-size: 1rem;
+    margin: 0.8rem 0.4rem;
+    color: var(--font-color);
+    text-transform: capitalize;
+}
+.check-box {
+    float: left;
+    margin: 0 0.2rem;
+    height: 1rem;
+    width: 1rem;
+}
+.fa-solid,
+.fa-trash {
+    float: right;
+}
+/* ------------- */
+
+/* to do footer section */
+.to-do-footer {
+    height: 12%;
+    width: 100%;
+    border-top: 1px solid rgba(128, 128, 128, 0.597);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.to-do-footer > p {
+    color: var(--font-color);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.to-do-footer > button {
+    color: white;
+    width: 7.3rem;
+    height: 2.1rem;
+    background-color: var(--font-color);
+    border-radius: 1rem;
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+}
+/* ------------- */
+
+.hidden {
+    display: none;
+}
+.checked {
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.527);
+}
+/* ------------------------------------ */
