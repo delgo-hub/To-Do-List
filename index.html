@@ -8,14 +8,15 @@
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
         <script
+            defer
             src="https://kit.fontawesome.com/bd77d4a142.js"
             crossorigin="anonymous"
         ></script>
     </head>
     <body>
-        <div class="to-do-body">
-            <div class="to-do-header">my to-do list</div>
-            <div id="tasks-container">
+        <main class="to-do-body">
+            <h1 class="to-do-header">my to-do list</h1>
+            <section id="tasks-container">
                 <div class="task-wrapper">
                     <input
                         class="task-input"
@@ -26,11 +27,11 @@
                     <button class="add-task">Add</button>
                 </div>
                 <ul id="task-container-smaller"></ul>
-            </div>
-            <div class="to-do-footer">
+            </section>
+            <section class="to-do-footer">
                 <p class="task-counter">0 tasks</p>
                 <button class="delete-all-btn">delete all</button>
-            </div>
-        </div>
+            </section>
+        </main>
     </body>
 </html>

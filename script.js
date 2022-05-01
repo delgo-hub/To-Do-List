@@ -12,6 +12,7 @@ let counter = 0;
 
 //EVENTS
 addBtn.addEventListener("click", () => {
+    //GUARD CLAUSE
     if (taskInput.value === "") return;
 
     //CREATE HTML ELEMENTS
@@ -58,7 +59,6 @@ addBtn.addEventListener("click", () => {
             taskLi.classList.remove("checked");
             counter++;
         }
-
         taskContainerSmaller.removeChild(taskLi);
         counter--;
         taskCounterEl.textContent = `${counter} TASKS`;
