@@ -67,7 +67,7 @@ addBtn.addEventListener("click", () => {
 
 //DELETE ALL TASKS EVENT
 deleteAllBtn.addEventListener("click", () => {
-    taskContainerSmaller.replaceChildren("");
+    taskContainerSmaller.replaceChildren();
 
     //RESET COUNTER
     counter = 0;
