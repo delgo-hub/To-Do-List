@@ -10,8 +10,8 @@ const deleteAllBtn = document.querySelector(".delete-all-btn");
 //VARIABLES
 let counter = 0;
 
-//EVENTS
-addBtn.addEventListener("click", () => {
+//FUNCTIONS
+const addTask = function () {
     //GUARD CLAUSE
     if (taskInput.value === "") return;
 
@@ -63,6 +63,14 @@ addBtn.addEventListener("click", () => {
         counter--;
         taskCounterEl.textContent = `${counter} TASKS`;
     });
+};
+
+//EVENTS
+addBtn.addEventListener("click", addTask);
+
+//ENTER KEY EVENT
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") addTask();
 });
 
 //DELETE ALL TASKS EVENT
