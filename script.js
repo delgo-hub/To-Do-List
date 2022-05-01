@@ -40,7 +40,7 @@ const addTask = function () {
     counter++;
     taskCounterEl.textContent = `${counter} TASKS`;
 
-    //CHECKBOX EVENT
+    //CHECKBOX
     checkBox.addEventListener("click", () => {
         taskLi.classList.toggle("checked");
 
@@ -53,7 +53,7 @@ const addTask = function () {
         }
     });
 
-    //DELETE BUTTON EVENT
+    //DELETE BUTTON
     deleteBtn.addEventListener("click", () => {
         if (taskLi.classList.contains("checked")) {
             taskLi.classList.remove("checked");
@@ -66,14 +66,15 @@ const addTask = function () {
 };
 
 //EVENTS
+//ADD BUTTON
 addBtn.addEventListener("click", addTask);
 
-//ENTER KEY EVENT
+//ENTER KEY
 document.addEventListener("keydown", (e) => {
     if (e.key === "Enter") addTask();
 });
 
-//DELETE ALL TASKS EVENT
+//DELETE ALL TASKS
 deleteAllBtn.addEventListener("click", () => {
     taskContainerSmaller.replaceChildren();
 
